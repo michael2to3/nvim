@@ -9,3 +9,5 @@ require('lualine').setup {
     padding = 1,
   },
 }
+
+vim.o.cmdheight = 0 -- warning (help ch)
