@@ -167,7 +167,5 @@ vim.o.relativenumber = true
 vim.cmd [[set clipboard+=unnamedplus]]
 
 -- disable press enter to continue
-vim.cmd[[
-set shortmess=a
-set cmdheight=2
-]]
+vim.o.cmdheight=1
+vim.o.shortmess=F
