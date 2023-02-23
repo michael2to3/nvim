@@ -1,5 +1,6 @@
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'Exafunction/codeium.vim'
   use 'mfussenegger/nvim-dap'
   use 'mfussenegger/nvim-jdtls'
   use({
