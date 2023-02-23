@@ -139,7 +139,7 @@ local config = {
     "java.base/java.lang=ALL-UNNAMED",
     "-jar",
     vim.fn.glob(home .. "/usr/share/java/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar"),
-    "-configuration", '/home/michael/.config/jdtls/config_linux/',
+    "-configuration", "/home/michael/.config/jdtls/config_linux/",
     "-data", workspace_dir,
   },
 
