@@ -80,6 +80,7 @@ end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local allow_format = {
+  "clangd",
   "null-ls",
   "jdt.ls",
   "jdtls",
@@ -247,6 +248,6 @@ vim.keymap.set('n', 'crm', jdtls.extract_method, { noremap = true })
 vim.keymap.set('n', '<leader>df', jdtls.test_class, { noremap = true })
 vim.keymap.set('n', '<leader>dn', jdtls.test_nearest_method, { noremap = true })
 
-vim.opt_local.shiftwidth = 2 -- switch from 4
-vim.opt_local.tabstop = 2
-vim.opt_local.cmdheight = 2
+vim.o.shiftwidth = 2 -- switch from 4
+vim.o.tabstop = 2
+vim.o.cmdheight = 2
